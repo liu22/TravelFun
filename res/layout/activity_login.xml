@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7" />
+
+    <EditText
+        android:id="@+id/EditText_username"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:inputType="textPersonName"
+        android:hint="@string/username" />"
+
+    <EditText
+        android:id="@+id/EditText_password"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/EditText_username"
+        android:layout_below="@+id/EditText_username"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/password" />
+
+    <Button
+        android:id="@+id/login_cancelBtn"
+        style="@style/cancelBtn_Style"
+        android:background="@drawable/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_password"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/EditText_username"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/login_confirmBtn"
+        style="@style/confirmBtn_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/EditText_password"
+        android:layout_below="@+id/EditText_password"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_confirm"
+        android:text="@string/confirm" />
+
+</RelativeLayout>

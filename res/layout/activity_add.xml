@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/frame_color" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/bar_background"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp">
+	    
+	    <Button 
+	        android:id="@+id/cancelBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@color/bar_background"
+	        android:textSize="12sp" 
+	        android:textColor="@color/text_font_white"/>
+	
+	    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:text="@string/title_bar_add"
+		    android:textSize="20sp" 
+		    android:textColor="@color/text_font_white"/>
+	    
+	    <Button 
+	        android:id="@+id/sendBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sendBtn"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@color/bar_background"
+	        android:textSize="12sp" 
+	        android:textColor="@color/sendBtn_color"/>
+ 
+	</RelativeLayout>
+	
+	<LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1"  
+        android:orientation="vertical" >  
+        
+	    <LinearLayout  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content"  
+	        android:orientation="vertical"
+	        android:background="@color/white" >  
+	        
+	        <EditText 
+                android:id="@+id/addTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addTitle_hint"
+                android:textSize="15sp"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"/>
+	        
+	        <View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="0.2dp"
+			    android:background="#e6e6e6"/>
+	        
+	        <ScrollView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="180dp">
+	            
+	            <EditText 
+		            android:id="@+id/addText"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+	                android:hint="@string/addtext_hint"
+	                android:textSize="15sp"
+	                android:background="@color/white"
+	                android:gravity="top|left"
+	                android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+		            android:paddingLeft="5dp"
+		            android:paddingRight="5dp" />
+	            
+	        </ScrollView>	        
+	        
+	        <View 
+			    android:layout_width="fill_parent"
+			    android:layout_height="0.2dp"
+			    android:background="#e6e6e6"/>
+	        
+	        <GridView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:columnWidth="50dp"  
+			    android:numColumns="auto_fit"  
+			    android:horizontalSpacing="10dp"  
+			    android:verticalSpacing="10dp"  
+			    android:stretchMode="columnWidth" >
+	            
+	            
+	            
+	        </GridView>
+	        
+	    </LinearLayout>
+	    
+    
+    </LinearLayout>
+	
+	<LinearLayout  
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/bar_background"
+	    android:gravity="bottom"
+	    android:paddingTop="6dp"
+	    android:paddingBottom="6dp" >
+	    
+	    <LinearLayout
+            android:id="@+id/bar_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+ 
+	        <ImageView
+	            android:id="@+id/iv_home"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="15"
+	            android:src="@drawable/home" />
+	
+	        <TextView
+	            android:id="@+id/tv_home"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:layout_marginTop="3dp"
+	            android:text="@string/home"
+	            android:textColor="@color/text_font_white"
+	            android:textSize="10sp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+ 
+	    <LinearLayout
+	        android:id="@+id/bar_add"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/iv_add"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="15"
+	            android:src="@drawable/add" />
+	
+	        <TextView
+	            android:id="@+id/tv_add"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:layout_marginTop="3dp"
+	            android:text="@string/add"
+	            android:textColor="@color/text_font_white"
+	            android:textSize="10sp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/bar_person"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/iv_person"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="15"
+	            android:src="@drawable/person" />
+	
+	        <TextView
+	            android:id="@+id/tv_person"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:layout_marginTop="3dp"
+	            android:text="@string/person"
+	            android:textColor="@color/text_font_white"
+	            android:textSize="10sp"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">悦途</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="log_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="password_repeat">重复密码</string>
+    <string name="title_bar_home">旅途记忆</string>
+    <string name="title_bar_add">发布游记</string>
+    <string name="title_bar_person">个人信息</string>
+    <string name="home">首页</string>
+    <string name="add">添加</string>
+    <string name="person">个人</string>
+    <string name="release">发布</string>
+    <string name="follow">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="userName">喵喵喵，咪咪咪</string>
+    <string name="editBtn">编辑资料</string>
+    <string name="age">年龄</string>
+    <string name="sex">性别</string>
+    <string name="sign">个性签名</string>
+    <string name="exit">退出当前帐号</string>
+    <string name="age_content">18</string>
+    <string name="sex_content">女</string>
+    <string name="sign_content">暂无</string>
+    <string name="sendBtn">发送</string>
+    <string name="title_bar_person_edit">编辑资料</string>
+    <string name="saveBtn">保存</string>
+    <string name="addTitle_hint">在此输入标题</string>
+    <string name="addtext_hint">在此输入一些内容文字...</string>
+    <string name="item_title">挪威自然风光</string>
+</resources>

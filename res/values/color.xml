@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loginBtn_color">#e84e40</color>
+    <color name="loginBtn_edge_color">#dd191d</color>
+    <color name="signupBtn_color">#00000000</color>
+    <color name="signupBtn_edge_color">#ffffff</color>
+    <color name="text_font_white">#ffffff</color>
+    <color name="cancelBtn_color">#adadad</color>
+    <color name="confirmBtn_color">#ff2d2d</color>
+    <color name="bar_background">#333333</color>
+    <color name="frame_color">#ececec</color>
+    <color name="frame_edge_color">#adadad</color>
+    <color name="exit">#df2727</color>
+    <color name="white">#ffffff</color>
+    <color name="total">#8c8c8c</color>
+    <color name="number">#ffa82f</color>
+    <color name="sendBtn_color">#f3e808</color>
+    <color name="transparent">#00000000</color>
+    <color name="saveBtn_color">#d81e06</color>
+</resources>

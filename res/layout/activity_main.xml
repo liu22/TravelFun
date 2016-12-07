@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.travelfun.MainActivity" >
+    
+    <ImageView 
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/loginBtn_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_login"
+        android:minHeight="24dip"
+        android:text="@string/log_in" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        style="@style/signupBtn_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginBtn"
+        android:layout_alignRight="@+id/loginBtn"
+        android:layout_alignTop="@+id/loginBtn"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_signup"
+        android:minHeight="24dip"
+        android:text="@string/sign_up" />
+
+</RelativeLayout>
