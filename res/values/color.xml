@@ -17,4 +17,7 @@
     <color name="sendBtn_color">#f3e808</color>
     <color name="transparent">#00000000</color>
     <color name="saveBtn_color">#d81e06</color>
+    <color name="followBtn_color">#fb371e</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#333333</color>
 </resources>

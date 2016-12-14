@@ -3,11 +3,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
+    
+        
     <android.support.v4.view.ViewPager
-		android:layout_height="wrap_content"
+		android:layout_height="200dp"
 		android:layout_width="match_parent"
 		android:id="@+id/viewPager">
         
     </android.support.v4.view.ViewPager>
+    
+    
+    <ImageButton 
+        android:id="@+id/backBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back"
+        android:layout_alignTop="@id/viewPager"/>
+    
+    <TextView 
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page_number"
+        android:textColor="@color/text_font_white"
+        android:layout_alignBottom="@id/viewPager"
+        android:layout_alignRight="@id/viewPager"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    
+    
+    <RelativeLayout 
+        android:id="@+id/writerInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/viewPager"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        
+        <com.example.travelfun.CircleImageView 
+	        android:layout_width="35dp"  
+       	    android:layout_height="35dp"
+	        android:id="@+id/writerPhoto"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/writerphoto"/>
+        
+        <TextView 
+            android:id="@+id/writerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/writerName"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/writerPhoto"
+            android:layout_marginLeft="10dp"/>
+        
+        <Button 
+            android:id="@+id/followBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/followBtn"
+            android:textSize="12sp"
+            android:background="@drawable/button_follow"
+            android:textColor="@color/followBtn_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/writerInfo">
+        
+        <View 
+            android:layout_width="0dp"
+		    android:layout_weight="0.05"
+		    android:layout_height="0.5dp"/>
+        
+        <View 
+		    android:layout_width="0dp"
+		    android:layout_weight="0.9"
+		    android:layout_height="0.5dp"
+		    android:background="#a5a5a5"
+		    android:layout_gravity="center"/>
+        
+        <View 
+            android:layout_width="0dp"
+		    android:layout_weight="0.05"
+		    android:layout_height="0.5dp"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/title"
+        android:layout_below="@id/line"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">            
+        
+        <TextView 
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="@string/content"/>
+        
+    </ScrollView>
 
 </RelativeLayout>
