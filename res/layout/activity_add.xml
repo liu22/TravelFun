@@ -98,21 +98,21 @@
 			    android:layout_width="fill_parent"
 			    android:layout_height="0.2dp"
 			    android:background="#e6e6e6"/>
-	        
-	        <GridView 
+
+	        <GridView
+	            android:id="@+id/photoGridView"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
+	            android:columnWidth="60dp"
+	            android:gravity="center"
+	            android:horizontalSpacing="10dp"
+	            android:verticalSpacing="10dp"
+	            android:numColumns="auto_fit"
 	            android:padding="10dp"
-	            android:columnWidth="50dp"  
-			    android:numColumns="auto_fit"  
-			    android:horizontalSpacing="10dp"  
-			    android:verticalSpacing="10dp"  
-			    android:stretchMode="columnWidth" >
-	            
-	            
+	            android:stretchMode="columnWidth" >
 	            
 	        </GridView>
-	        
+            
 	    </LinearLayout>
 	    
     
